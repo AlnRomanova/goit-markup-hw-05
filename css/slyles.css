@@ -649,13 +649,11 @@ body {
 .address-list .link:hover,
 .address-list .link:focus {
   color: var(--accent-color);
+  color: #188ce8;
 }
 
-/* .social {
-  padding: 12px 0 0 0;
-} */
-
-.social .title {
+.social .title,
+.mailing-form .title {
   font-weight: 700;
   font-size: 14px;
   line-height: 16px;
@@ -663,6 +661,41 @@ body {
   text-transform: uppercase;
   color: var(--primary-white-color);
   margin-bottom: 20px;
+}
+
+.mailing-form {
+  display: flex;
+  align-items: baseline;
+  margin-left: auto;
+}
+
+.mailing-btn {
+  width: 200px;
+  height: 50px;
+  background-color: #2196f3;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  color: var(--primary-white-color);
+  margin-left: 12px;
+}
+
+.mailing-field {
+  width: 358px;
+  height: 50px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+  background-color: transparent;
+}
+
+.mailing-field::placeholder {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  letter-spacing: 0.03em;
+  color: rgba(255, 255, 255, 0.6);
+  padding: 15px 15px;
 }
 
 .footer {
@@ -746,4 +779,20 @@ body {
   border-radius: 50%;
   background-color: var(--primary-white-color);
   border: 1px solid var(--border-color);
+}
+
+.registration-form {
+  display: block;
+  padding: 32px 31px 48px 49px;
+}
+.form-title {
+  display: block;
+  margin-bottom: 12px;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 23px;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--title-text-color);
 }
